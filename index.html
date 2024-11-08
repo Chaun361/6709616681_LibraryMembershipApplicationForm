@@ -9,7 +9,75 @@
 </head>
 
 <body>
-
+    <div claass="form-container">
+        <form action="" method="">
+            <legend>Library Membership Application Form</legend>
+            <label for="nameTh">ชื่อ:</label>
+            <input type="text" name="nameTh" id="nameTh" required>
+            <label for="surnameTh">นามสกุล:</label>
+            <input type="text" name="surnameTh" id="surnameTh" required>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="surName">Surname:</label>
+            <input type="text" name="surName" id="surName" required>
+            <label>
+                Gender
+                <select id='dropdown' name='gender'>
+                    <option>(select your gender)</option>
+                    <option value='male'>Male</option>
+                    <option value='female'>Female</option>
+                    <option value='other'>Other</option>
+                </select>
+            </label>
+            <label for="studentId">Student ID:</label>
+            <input type="text" name="studentId" id="studentId" required>
+            <label>
+                Faculty:
+                <select id='dropdown' name='faculty'>
+                    <option>(select your faculty)</option>
+                    <option value="fac-law">Faculty of Law</option>
+                    <option value="fac-bus">Thammasat Business School</option>
+                    <option value="fac-polsci">Faculty of Political Science</option>
+                    <option value="fac-eco">Faculty of Economics</option>
+                    <option value="fac-socad">Faculty of Social Administration</option>
+                    <option value="fac-socio">Faculty of Sociology and Anthropology</option>
+                    <option value="fac-lart">Faculty of Liberal Arts</option>
+                    <option value="fac-masscom">Faculty of Journalism and Mass Communication</option>
+                    <option value="fac-scitech">Faculty of Science and Technology</option>
+                    <option value="fac-engi">Faculty of Engineering</option>
+                    <option value="fac-arch">Faculty of Architecture and Planning</option>
+                    <option value="fac-med">Faculty of Medicine</option>
+                    <option value="fac-alliedhealth">Faculty of Allied Health Sciences</option>
+                    <option value="fac-densitry">Faculty of Dentistry</option>
+                    <option value="fac-nurse">Faculty of Nursing</option>
+                    <option value="fac-pubhealth">Faculty of Public Health</option>
+                </select>
+            </label>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <label for="dateOfBirth">
+                Date of Birth:
+                <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+            </label>
+            <label for="favoriteBookType">Favorite Book Type:
+                <select id='favoriteBookType' name='favoriteBookType'>
+                    <option>(select your favorite book type)</option>
+                    <option value="fiction">Fiction Books</option>
+                    <option value="textbook">Text Books</option>
+                    <option value="refbook">Reference Books</option>
+                    <option value="religious">Religious Books</option>
+                    <option value="science">Scientific Books</option>
+                    <option value="history">Historical Books</option>
+                    <option value="biography">Biographies</option>
+                </select>
+            </label>
+            <label>Subcribe to our newsletter?</label>
+            <label for='yes_sub' name='radio-sub'><input type='radio' id='yes_sub' name='radio-sub' checked
+                    value='yes-sub'></input>Yes</label>
+            <label for='no_sub' name='radio-sub'><input type='radio' id='left' name='radio-sub'
+                    value='left'></input>No</label>
+        </form>
+    </div>
 </body>
 
 </html>
