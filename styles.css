@@ -3,4 +3,133 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: Helvetica;
+}
+
+.block {
+    display: block;
+}
+
+body {
+    background: linear-gradient(rgba(82, 42, 15, 0.6), rgba(12, 13, 51, 0.767)),
+        /* Dark overlay */
+        url('./media/lib.jpg') no-repeat center center/cover;
+}
+
+
+.form-container {
+    width: 600px;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+form {
+    margin: 1rem 0rem;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 22px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+input,
+select {
+    height: 2.2rem;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border: 0.2px solid #e7e6e6;
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+input:focus {
+    border-bottom: 2px solid #ffe23d;
+}
+
+input[type="radio"] {
+    height: 1rem;
+    width: 1.5rem;
+    margin-right: 0.2rem;
+    margin-top: 0rem;
+}
+
+.split {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 49%;
+}
+
+input[type="email"],
+#studentId {
+    width: 100%;
+}
+
+#FacDropdown,
+#favoriteBookType {
+    width: 65%;
+}
+
+section {
+    margin: 0.7rem auto;
+}
+
+button[type="submit"] {
+    display: block;
+    margin: 2rem auto 0.5rem auto;
+    width: 100%;
+    height: 40px;
+    background-color: #8aebaa;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    transition: 0.3s;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+
+}
+
+@media (max-width: 450px) {
+
+    .form-container {
+        width: 90vw;
+        padding: 1.5rem;
+    }
+
+    form {
+        margin: 1rem 0.1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    label,
+    input,
+    select {
+        font-size: 95%;
+    }
+
+    #FacDropdown,
+    #favoriteBookType {
+        width: 75%;
+    }
 }
